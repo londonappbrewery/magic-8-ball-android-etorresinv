@@ -5,9 +5,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="16dp"
-    android:paddingRight="16dp"
-    android:paddingTop="16dp"
+    android:paddingTop="50dp"
     android:paddingBottom="16dp"
+    android:background="@drawable/ic_launcher_background"
     tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorAccent"
+        android:background="@color/colorPrimary"
+        android:text="@string/prompt"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/image_eightBall"
+        android:layout_below="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:src="@drawable/ball5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/image_eightBall">
+
+        <Button
+            android:id="@+id/askButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorAccent"
+            android:paddingRight="100dp"
+            android:paddingLeft="100dp"
+            android:text="@string/ask"/>
+
+    </RelativeLayout>
+
 </RelativeLayout>
